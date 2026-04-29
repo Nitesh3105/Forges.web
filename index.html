@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forges.web — Custom Websites for Ambitious Businesses</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="Favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Noise texture overlay -->
+  <div class="noise"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <span class="logo-mark">W</span>
+        <span class="logo-text">WebCraft<em>Studio</em></span>
+      </a>
+      <nav class="nav">
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="nav-cta">Get Started</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#work" class="mob-link">Work</a>
+    <a href="#process" class="mob-link">Process</a>
+    <a href="#pricing" class="mob-link">Pricing</a>
+    <a href="#contact" class="mob-link mob-cta">Get Started</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Currently accepting new clients
+      </div>
+      <h1 class="hero-title">
+        <span class="line" data-delay="0">Websites that</span>
+        <span class="line italic" data-delay="100">work as hard</span>
+        <span class="line" data-delay="200">as you do.</span>
+      </h1>
+      <p class="hero-sub">
+        We craft bespoke digital experiences for business owners who refuse to settle for templates. 
+        Fast, beautiful, and built to convert.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">
+          Request Your Website
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#work" class="btn btn-ghost">See Our Work</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <strong>120+</strong>
+          <span>Sites Delivered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>98%</strong>
+          <span>Client Satisfaction</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>7 days</strong>
+          <span>Avg. Launch Time</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="browser-mockup">
+        <div class="browser-bar">
+          <div class="browser-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="browser-url">yourcustomwebsite.com</div>
+        </div>
+        <div class="browser-body">
+          <div class="mock-hero-block"></div>
+          <div class="mock-row">
+            <div class="mock-card"></div>
+            <div class="mock-card"></div>
+            <div class="mock-card"></div>
+          </div>
+          <div class="mock-text-block">
+            <div class="mock-line w80"></div>
+            <div class="mock-line w60"></div>
+            <div class="mock-line w70"></div>
+          </div>
+          <div class="mock-btn-row">
+            <div class="mock-btn"></div>
+          </div>
+        </div>
+      </div>
+      <div class="floating-badge badge-left">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        Top-rated design
+      </div>
+      <div class="floating-badge badge-right">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        Lightning fast
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-inner">
+        <span>E-commerce</span><span class="dot">✦</span>
+        <span>Restaurant & Food</span><span class="dot">✦</span>
+        <span>Real Estate</span><span class="dot">✦</span>
+        <span>Healthcare</span><span class="dot">✦</span>
+        <span>Education</span><span class="dot">✦</span>
+        <span>Fitness & Wellness</span><span class="dot">✦</span>
+        <span>Law Firms</span><span class="dot">✦</span>
+        <span>Consulting</span><span class="dot">✦</span>
+        <span>Photography</span><span class="dot">✦</span>
+        <span>Hospitality</span><span class="dot">✦</span>
+        <span>E-commerce</span><span class="dot">✦</span>
+        <span>Restaurant & Food</span><span class="dot">✦</span>        <span>Real Estate</span><span class="dot">✦</span>
+        <span>Healthcare</span><span class="dot">✦</span>
+        <span>Education</span><span class="dot">✦</span>
+        <span>Fitness & Wellness</span><span class="dot">✦</span>
+        <span>Law Firms</span><span class="dot">✦</span>
+        <span>Consulting</span><span class="dot">✦</span>
+        <span>Photography</span><span class="dot">✦</span>
+        <span>Hospitality</span><span class="dot">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">How It Works</span>
+        <h2>From idea to launch <em>in days,</em> not months.</h2>
+      </div>
+      <div class="steps">
+        <div class="step" data-num="01">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+          </div>
+          <h3>Fill the brief</h3>
+          <p>Tell us about your business, goals, and vision. Takes less than 5 minutes.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step" data-num="02">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 10l-4 4-4-4M12 14V3M3 21h18"/></svg>
+          </div>
+          <h3>We design & build</h3>
+          <p>Our team crafts a pixel-perfect site tailored to your brand within 48 hours.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step" data-num="03">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3>Review & refine</h3>
+          <p>You get unlimited revisions until every pixel makes you proud.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step" data-num="04">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 3l14 9-14 9V3z"/></svg>
+          </div>
+          <h3>Launch & grow</h3>
+          <p>Go live with a blazing-fast site built to attract customers 24/7.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Transparent Pricing</span>
+        <h2>Simple plans. <em>No surprises.</em></h2>
+      </div>
+      <div class="pricing-grid">
+        <div class="plan">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price"><sup>₹</sup>14,999</div>
+          <div class="plan-desc">Perfect for new businesses needing an impactful online presence.</div>
+          <ul class="plan-features">
+            <li>✓ Up to 5 pages</li>
+            <li>✓ Mobile-responsive design</li>
+            <li>✓ Contact form</li>
+            <li>✓ SEO optimized</li>
+            <li>✓ 2 rounds of revisions</li>
+            <li>✓ 7-day delivery</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Get Started</a>
+        </div>
+        <div class="plan plan-featured">
+          <div class="plan-badge">Most Popular</div>
+          <div class="plan-name">Growth</div>
+          <div class="plan-price"><sup>₹</sup>29,999</div>
+          <div class="plan-desc">For established businesses ready to dominate their market online.</div>
+          <ul class="plan-features">
+            <li>✓ Up to 15 pages</li>
+            <li>✓ Custom animations</li>
+            <li>✓ Blog / CMS setup</li>
+            <li>✓ Advanced SEO</li>
+            <li>✓ Unlimited revisions</li>
+            <li>✓ 14-day delivery</li>
+            <li>✓ 1 month free support</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary-dark">Get Started</a>
+        </div>
+        <div class="plan">
+          <div class="plan-name">Enterprise</div>
+          <div class="plan-price">Custom</div>
+          <div class="plan-desc">For businesses that need a full digital ecosystem built around them.</div>
+          <ul class="plan-features">
+            <li>✓ Unlimited pages</li>
+            <li>✓ E-commerce / Booking</li>
+            <li>✓ Custom integrations</li>
+            <li>✓ Priority support</li>
+            <li>✓ Dedicated developer</li>
+            <li>✓ Ongoing maintenance</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / REQUEST FORM ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-tag">Let's Build Together</span>
+          <h2>Tell us about your <em>dream website.</em></h2>
+          <p>Fill in the details and we'll get back to you with a custom proposal within 24 hours. No commitment required.</p>
+          <div class="contact-perks">
+            <div class="perk">
+              <div class="perk-icon">⚡</div>
+              <div>
+                <strong>Quick turnaround</strong>
+                <span>Most sites live in under 2 weeks</span>
+              </div>
+            </div>
+            <div class="perk">
+              <div class="perk-icon">🎨</div>
+              <div>
+                <strong>100% custom design</strong>
+                <span>No templates. Ever.</span>
+              </div>
+            </div>
+            <div class="perk">
+              <div class="perk-icon">🔒</div>
+              <div>
+                <strong>Your info is safe</strong>
+                <span>We never share your data</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form name = "request-form" class="request-form" id="requestForm" method = "POST" netlify  novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="ownerName">Your Full Name <span class="req">*</span></label>
+              <input type="hidden" name="form-name" value="request-form" />
+              <input type="text" id="ownerName" name="ownerName" placeholder="Name" required />
+              <span class="err-msg" id="err-ownerName"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span class="req">*</span></label>
+              <input type="email" id="email" name="email" placeholder="E-mail" required />
+              <span class="err-msg" id="err-email"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp <span class="req">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="Contact No." required />
+              <span class="err-msg" id="err-phone"></span>
+            </div>
+            <div class="form-group">
+              <label for="businessName">Business Name <span class="req">*</span></label>
+              <input type="text" id="businessName" name="businessName" placeholder="Your Business Pvt. Ltd." required />
+              <span class="err-msg" id="err-businessName"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="industry">Industry / Niche <span class="req">*</span></label>
+              <div class="select-wrap">
+                <select id="industry" name="industry" required>
+                  <option value="">Select your industry…</option>
+                  <option>E-commerce / Retail</option>
+                  <option>Restaurant / Food & Beverage</option>
+                  <option>Real Estate</option>
+                  <option>Healthcare / Medical</option>
+                  <option>Education / Coaching</option>
+                  <option>Fitness & Wellness</option>
+                  <option>Law / Legal</option>
+                  <option>Finance / Consulting</option>
+                  <option>Photography / Creative</option>
+                  <option>Travel & Hospitality</option>
+                  <option>Technology / SaaS</option>
+                  <option>Other</option>
+                </select>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+              <span class="err-msg" id="err-industry"></span>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget Range</label>
+              <div class="select-wrap">
+                <select id="budget" name="budget">
+                  <option value="">Choose a budget range…</option>
+                  <option>Under ₹15,000</option>
+                  <option>₹15,000 – ₹30,000</option>
+                  <option>₹30,000 – ₹60,000</option>
+                  <option>₹60,000+</option>
+                  <option>Let's discuss</option>
+                </select>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="currentSite">Current Website URL <span class="optional">(if any)</span></label>
+            <input type="url" id="currentSite" name="currentSite" placeholder="https://yoursite.com" />
+          </div>
+
+          <div class="form-group">
+            <label>Features You Need</label>
+            <div class="checkbox-grid">
+              <label class="check-item"><input type="checkbox" name="features" value="Contact Form" /><span>Contact Form</span></label>
+              <label class="check-item"><input type="checkbox" name="features" value="Online Booking" /><span>Online Booking</span></label>
+              <label class="check-item"><input type="checkbox" name="features" value="E-commerce Store" /><span>E-commerce Store</span></label>
+              <label class="check-item"><input type="checkbox" name="features" value="Blog / CMS" /><span>Blog / CMS</span></label>
+              <label class="check-item"><input type="checkbox" name="features" value="Photo Gallery" /><span>Photo Gallery</span></label>
+              <label class="check-item"><input type="checkbox" name="features" value="WhatsApp Integration" /><span>WhatsApp Integration</span></label>
+              <label class="check-item"><input type="checkbox" name="features" value="SEO Optimization" /><span>SEO Optimization</span></label>
+              <label class="check-item"><input type="checkbox" name="features" value="Social Media Links" /><span>Social Media Links</span></label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="description">Tell Us About Your Business & Goals <span class="req">*</span></label>
+            <textarea id="description" name="description" rows="4" placeholder="Describe your business, what you sell or offer, who your customers are, and what you want your website to achieve…" required></textarea>
+            <span class="err-msg" id="err-description"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="deadline">Desired Launch Date</label>
+            <input type="date" id="deadline" name="deadline" />
+          </div>
+
+          <div class="form-group form-group--inline">
+            <label class="check-item check-consent">
+              <input type="checkbox" id="consent" name="consent" required />
+              <span>I agree to be contacted by WebCraft Studio regarding my request. <span class="req">*</span></span>
+            </label>
+            <span class="err-msg" id="err-consent"></span>
+          </div>
+
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <span class="btn-text">Send My Request</span>
+            <span class="btn-loader" id="btnLoader"></span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+
+          <!-- Success / Error messages -->
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <div class="success-icon">✓</div>
+            <h3>Request Sent!</h3>
+            <p>Thank you! We've received your details and will reach out within 24 hours with a custom proposal.</p>
+          </div>
+          <div class="form-error-msg" id="formErrorMsg" style="display:none;">
+            Something went wrong. Please try again or email us directly.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-mark">W</span>
+        <span class="logo-text">WebCraft<em>Studio</em></span>
+      </div>
+      <p class="footer-tagline">Crafting digital excellence since 2020.</p>
+      <div class="footer-links">
+        <a href="mailto:hello@webcraftstudio.in">forges.web@gmail.com</a>
+        <span>·</span>
+        <a href="tel:+918318716153">+91 83187 16153</a>
+      </div>
+      <p class="footer-copy">© 2025 WebCraft Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
